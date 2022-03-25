@@ -7,6 +7,6 @@ echo $miVariable;
 echo"<br>";
 $miValor = 2;
 //visualizamos sin embargho realizamos una multiplicasion por * 3
-echo 3*$miValor;a
+echo 3*$miValor;
 
 ?>

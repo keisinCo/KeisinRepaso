@@ -10,7 +10,8 @@
      */
     //COMANDO ECHO DEVUELVE UN VALOR
     echo"Hola soy un parrafo";
-    echo "<br>";  //salto de line    
+    echo "<br>";  //salto de linea
+    echo 3+3;     //realiza operaciones en html
                   /*que no se puede en html*/
 
     //TERMINA PHP
