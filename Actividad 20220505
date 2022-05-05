@@ -1,0 +1,20 @@
+<?php
+$servidor="localhost";
+$usuario="root";
+$contrasena="";
+
+try{
+
+    $conexion=new PDO("mysql:host=$servidor;dbname=album", $usuario,$contrasena);
+    $conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    echo "Conexion establecida";
+
+$sql= "INSERT INTO `fotos` (`Id`, `nombre`, `ruta`) VALUES (NULL, 'jugando con la programacion', 'foto.jpg');";
+$conexion->exec($sql);
+
+}catch(PDOException $error){
+    echo "Conexión erronea".$error;
+
+}
+
+?>
